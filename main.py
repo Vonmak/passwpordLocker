@@ -156,15 +156,15 @@ def main():
 
                 print('\n')
 
-    #     elif short_code == 'fc':
-    #         print('Please Enter Account to Search:')
-    #         search_account = input()
-    #         if check_existing_cred(search_account):
-    #             search_cred = find_cred(search_account)
-    #             print(f'Yes you have {search_cred.account} in your storage.')
+        elif short_code == 'fc':
+            print('Please Enter Account to Search:')
+            search_account = input()
+            if check_existing_cred(search_account):
+                search_cred = find_cred(search_account)
+                print(f'Yes you have {search_cred.account} in your storage.')
 
-    #         else:
-    #             print('Ooops!! That account does not exist!!')
+            else:
+                print('Ooops!! That account does not exist!!')
 
 
 if __name__ == '__main__':
