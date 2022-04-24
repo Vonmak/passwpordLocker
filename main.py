@@ -140,21 +140,21 @@ def main():
             print('\n')
             print(f'')
 
-    #     elif short_code == 'dc':
-    #         if display_cred():
-    #             print('Hey!! A list of your accounts and their details. 🧾')
-    #             print('\n')
-    #             for credentials in display_cred():
-    #                 print(
-    #                     f'Account: {credentials.account}\n UserName: {credentials.account_username}\n Password: {credentials.account_password}')
-    #                 print('\n')
+        elif short_code == 'dc':
+            if display_cred():
+                print('Hey!! A list of your accounts and their details. 🧾')
+                print('\n')
+                for credentials in display_cred():
+                    print(
+                        f'Account: {credentials.account}\n UserName: {credentials.account_username}\n Password: {credentials.account_password}')
+                    print('\n')
 
-    #         else:
-    #             print('\n')
-    #             print(
-    #                 'Sorry!😔 You do not seem to have any account details stored yet.')
+            else:
+                print('\n')
+                print(
+                    'Sorry!😔 You do not seem to have any account details stored yet.')
 
-    #             print('\n')
+                print('\n')
 
     #     elif short_code == 'fc':
     #         print('Please Enter Account to Search:')
