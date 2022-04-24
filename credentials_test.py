@@ -29,18 +29,20 @@ def test_delete_cred(self):
     self.new_cred.delete_cred()
     self.assertEqual(len(Cred.accounts_list), 1)
 
+
+def test_find_cred_account(self):
+    self.new_cred.save_cred()
+    test_cred = Cred('google', 'vincent', '2764r7')
+    test_cred.save_cred()
+    found_cred = Cred.find_cred('google')
+    self.assertEqual(
+        found_cred.account_username,
+        test_cred.account_username
+    )
+
 # def test_display_cred(self):
 #     self.assertEqual(Cred.display_cred(), Cred.accounts_list)
 
-# def test_find_cred_account(self):
-#     self.new_cred.save_cred()
-#     test_cred = Cred('google', 'vincent', '2764r7')
-#     test_cred.save_cred()
-#     found_cred = Cred.find_cred('google')
-#     self.assertEqual(
-#         found_cred.account_username,
-#         test_cred.account_username
-#     )
 
 # def test_cred_exist(self):
 #     self.new_cred.save_cred()
