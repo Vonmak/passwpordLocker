@@ -48,8 +48,9 @@ def test_cred_exist(self):
     cred_exists = Cred.cred_exist('facebook')
     self.assertTrue(cred_exists)
 
-# def test_display_cred(self):
-#     self.assertEqual(Cred.display_cred(), Cred.accounts_list)
+
+def test_display_cred(self):
+    self.assertEqual(Cred.display_cred(), Cred.accounts_list)
 
 
 if __name__ == '__main__':
