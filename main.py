@@ -112,33 +112,33 @@ def main():
             print('Username...')
             account_name = input()
 
-    #         while True:
-    #             print(
-    #                 'use short code: \n mp - enter your own password, gp - generate a password')
-    #             short_code = input().lower()
-    #             if short_code == 'mp':
-    #                 print('Password:')
-    #                 account_password = input()
+            while True:
+                print(
+                    'use short code: \n mp - enter your own password, gp - generate a password')
+                short_code = input().lower()
+                if short_code == 'mp':
+                    print('Password:')
+                    account_password = input()
 
-    #             elif short_code == 'gp':
-    #                 # passwordGen.chars
-    #                 while True:
-    #                     password_len = int(
-    #                         input('password length:'))
-    #                     password = ''
-    #                     for x in range(0, password_len):
-    #                         password_char = random.choice(chars)
-    #                         password = password + password_char
+                elif short_code == 'gp':
 
-    #                     print('Hello here is your password:', password)
-    #                     break
-    #                 print('Password:')
-    #                 account_password = input()
+                    while True:
+                        password_len = int(
+                            input('password length:'))
+                        password = ''
+                        for x in range(0, password_len):
+                            password_char = random.choice(chars)
+                            password = password + password_char
 
-    #             break
-    #         save_cred(create_cred(account, account_name, account_password))
-    #         print('\n')
-    #         print(f'')
+                        print('Hello here is your password:', password)
+                        break
+                    print('Password:')
+                    account_password = input()
+
+                break
+            save_cred(create_cred(account, account_name, account_password))
+            print('\n')
+            print(f'')
 
     #     elif short_code == 'dc':
     #         if display_cred():
