@@ -1,10 +1,9 @@
-# #!/usr/bin/env python3.10
+#!/usr/bin/env python3.10
 
 
-# from user import User
-# from credentials import Cred
-# # from password_generator import passwordGen
-# import random
+from user import User
+from credentials import Cred
+import random
 
 
 # def create_user(username, password):
