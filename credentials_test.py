@@ -40,16 +40,16 @@ def test_find_cred_account(self):
         test_cred.account_username
     )
 
+
+def test_cred_exist(self):
+    self.new_cred.save_cred()
+    test_cred = Cred('facebook', 'vincent', '2764=ff')
+    test_cred.save_cred()
+    cred_exists = Cred.cred_exist('facebook')
+    self.assertTrue(cred_exists)
+
 # def test_display_cred(self):
 #     self.assertEqual(Cred.display_cred(), Cred.accounts_list)
-
-
-# def test_cred_exist(self):
-#     self.new_cred.save_cred()
-#     test_cred = Cred('facebook', 'vincent', '2764=ff')
-#     test_cred.save_cred()
-#     cred_exists = Cred.cred_exist('facebook')
-#     self.assertTrue(cred_exists)
 
 
 if __name__ == '__main__':
