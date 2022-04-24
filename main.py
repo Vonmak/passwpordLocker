@@ -43,38 +43,59 @@ def display_cred():
 
 
 def main():
-    print("Hello! I hope you've been good. \n Welcome to your Password Locker. \n Please Enter your details below:")
+    print("Hello! I hope you've been good. \n Welcome to your Password Locker. \n Choose what you want to do: \n su - signup, li - login")
+
+    short_code = input().lower()
+    if short_code == 'li':
+        print('\n')
+        print('user Name:')
+        username = input()
+
+        print('Password:')
+        password = input()
+
+    elif short_code == 'su':
+        print('New Account')
+        print('-'*10)
+
+        print('Username...')
+        account = input()
+
+        while True:
+            print(
+                'use short code: \n mp - enter your own password, gp - generate a password')
+            short_code = input().lower()
+            if short_code == 'mp':
+                print('Password...')
+                password = input()
+
+            elif short_code == 'gp':
+
+                while True:
+                    password_len = int(
+                        input('Password length:'))
+                    password = ''
+                    for x in range(0, password_len):
+                        password_char = random.choice(chars)
+                        password = password + password_char
+
+                    print('\n')
+                    print('Hello here is your password:', password)
+                    break
+                print('Password...')
+                password = input()
+
+            break
+        print('\n')
+        print('User Name:')
+        username = input()
+
+        print('Password:')
+        password = input()
 
     print('\n')
-    print('user Name:')
-    username = input()
-
-    # while True:
-    #     print('use short code: \n mp - enter your own password, gp - generate a password')
-    #     short_code = input().lower()
-    #     if short_code == 'mp':
-    #         print('Password:')
-    #         password = input()
-
-    #     elif short_code == 'gp':
-    #         # passwordGen.chars
-    #         while True:
-    #             password_len = int(
-    #                 input('Password length:'))
-    #             password = ''
-    #             for x in range(0, password_len):
-    #                 password_char = random.choice(chars)
-    #                 password = password + password_char
-
-    #             print('Hello here is your password:', password)
-    #             break
-    #         print('Password:')
-    #         password = input()
-
-    #     break
-
-    # print(f'Hi {username}!, What would you like to do?')
-    # print('\n')
+    print(f'Hi {username}!, What would you like to do?')
+    print('\n')
 
     # while True:
     #     print('Use these short: \n ca -create credentials account, dc - display credentials, fc - find credentials, dac- delete account credentials')
