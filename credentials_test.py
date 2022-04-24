@@ -21,12 +21,13 @@ def test_save_cred(self):
     self.new_cred.save_cred()
     self.assertEqual(len(Cred.accounts_list), 1)
 
-# def test_delete_cred(self):
-#     self.new_cred.save_cred()
-#     test_cred = Cred('instagram', 'vincent', '079817636')
-#     test_cred.save_cred()
-#     self.new_cred.delete_cred()
-#     self.assertEqual(len(Cred.accounts_list), 1)
+
+def test_delete_cred(self):
+    self.new_cred.save_cred()
+    test_cred = Cred('instagram', 'vincent', '079817636')
+    test_cred.save_cred()
+    self.new_cred.delete_cred()
+    self.assertEqual(len(Cred.accounts_list), 1)
 
 # def test_display_cred(self):
 #     self.assertEqual(Cred.display_cred(), Cred.accounts_list)
