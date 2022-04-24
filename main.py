@@ -15,13 +15,13 @@ def save_user(user):
     user.save_user()
 
 
-# def create_cred(account, account_username, account_pasword):
-#     new_cred = Cred(account, account_username, account_pasword)
-#     return new_cred
+def create_cred(account, account_username, account_pasword):
+    new_cred = Cred(account, account_username, account_pasword)
+    return new_cred
 
 
-# def save_cred(credentials):
-#     credentials.save_cred()
+def save_cred(credentials):
+    credentials.save_cred()
 
 
 # def del_cred(credentials):
