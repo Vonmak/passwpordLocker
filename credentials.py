@@ -10,8 +10,8 @@ class Cred:
     def save_cred(self):
         Cred.accounts_list.append(self)
 
-#     def delete_cred(self):
-#         Cred.accounts_list.remove(self)
+    def delete_cred(self):
+        Cred.accounts_list.remove(self)
 
 #     @classmethod
 #     def display_cred(cls):
