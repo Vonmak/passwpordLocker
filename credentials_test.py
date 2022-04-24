@@ -47,5 +47,6 @@ def test_init(self):
 #     cred_exists = Cred.cred_exist('facebook')
 #     self.assertTrue(cred_exists)
 
-# if __name__ == '__main__':
-#     unittest.main()
+
+if __name__ == '__main__':
+    unittest.main()
