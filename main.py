@@ -34,8 +34,8 @@ def find_cred(account):
     return Cred.find_cred(account)
 
 
-# def check_existing_cred(account):
-#     return Cred.accounts_list(account)
+def check_existing_cred(account):
+    return Cred.accounts_list(account)
 
 
 # def display_cred():
