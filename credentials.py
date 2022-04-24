@@ -26,6 +26,6 @@ class Cred:
                 return True
         return False
 
-#     @classmethod
-#     def display_cred(cls):
-#         return cls.accounts_list
+    @classmethod
+    def display_cred(cls):
+        return cls.accounts_list
