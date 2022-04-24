@@ -7,8 +7,8 @@ class Cred:
         self.account_username = account_username
         self.account_password = account_password
 
-#     def save_cred(self):
-#         Cred.accounts_list.append(self)
+    def save_cred(self):
+        Cred.accounts_list.append(self)
 
 #     def delete_cred(self):
 #         Cred.accounts_list.remove(self)
