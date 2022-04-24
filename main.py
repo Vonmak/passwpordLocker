@@ -6,13 +6,13 @@ from credentials import Cred
 import random
 
 
-# def create_user(username, password):
-#     new_user = User(username, password)
-#     return new_user
+def create_user(username, password):
+    new_user = User(username, password)
+    return new_user
 
 
-# def save_user(user):
-#     user.save_user()
+def save_user(user):
+    user.save_user()
 
 
 # def create_cred(account, account_username, account_pasword):
