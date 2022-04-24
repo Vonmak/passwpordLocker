@@ -97,20 +97,20 @@ def main():
     print(f'Hi {username}!, What would you like to do?')
     print('\n')
 
-    # while True:
-    #     print('Use these short: \n ca -create credentials account, dc - display credentials, fc - find credentials, dac- delete account credentials')
+    while True:
+        print('Use these short: \n ca -create credentials account, dc - display credentials, fc - find credentials, dac- delete account credentials')
 
-    #     short_code = input().lower()
+        short_code = input().lower()
 
-    #     if short_code == 'ca':
-    #         print('New Account')
-    #         print('-'*10)
+        if short_code == 'ca':
+            print('New Account')
+            print('-'*10)
 
-    #         print('Account...')
-    #         account = input()
+            print('Account...')
+            account = input()
 
-    #         print('Username...')
-    #         account_name = input()
+            print('Username...')
+            account_name = input()
 
     #         while True:
     #             print(
