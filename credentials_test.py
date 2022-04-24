@@ -3,17 +3,18 @@ import unittest
 from credentials import Cred
 
 
-# class TestCred(unittest.TestCase):
-# def setUp(self):
-#     self.new_cred = Cred('twitter', 'victor', 'vicrades')
+class TestCred(unittest.TestCase):
+    def setUp(self):
+        self.new_cred = Cred('twitter', 'victor', 'vicrades')
 
 # def tearDown(self):
 #     Cred.accounts_list = []
 
-# def test_init(self):
-#     self.assertEqual(self.new_cred.account, 'twitter')
-#     self.assertEqual(self.new_cred.account_username, 'victor')
-#     self.assertEqual(self.new_cred.account_password, 'vicrades')
+
+def test_init(self):
+    self.assertEqual(self.new_cred.account, 'twitter')
+    self.assertEqual(self.new_cred.account_username, 'victor')
+    self.assertEqual(self.new_cred.account_password, 'vicrades')
 
 # def test_save_cred(self):
 #     self.new_cred.save_cred()
