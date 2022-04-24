@@ -13,15 +13,16 @@ class Cred:
     def delete_cred(self):
         Cred.accounts_list.remove(self)
 
+    @classmethod
+    def find_cred(cls, account):
+        for cred in cls.accounts_list:
+            if cred.account == account:
+                return cred
+
 #     @classmethod
 #     def display_cred(cls):
 #         return cls.accounts_list
 
-#     @classmethod
-#     def find_cred(cls, account):
-#         for cred in cls.accounts_list:
-#             if cred.account == account:
-#                 return cred
 
 #     @classmethod
 #     def cred_exist(cls, account):
