@@ -16,9 +16,10 @@ def test_init(self):
     self.assertEqual(self.new_cred.account_username, 'victor')
     self.assertEqual(self.new_cred.account_password, 'vicrades')
 
-# def test_save_cred(self):
-#     self.new_cred.save_cred()
-#     self.assertEqual(len(Cred.accounts_list), 1)
+
+def test_save_cred(self):
+    self.new_cred.save_cred()
+    self.assertEqual(len(Cred.accounts_list), 1)
 
 # def test_delete_cred(self):
 #     self.new_cred.save_cred()
