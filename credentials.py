@@ -1,11 +1,11 @@
-# class Cred:
+class Cred:
 
-#     accounts_list = []
+    accounts_list = []
 
-#     def __init__(self, account, account_username, account_password):
-#         self.account = account
-#         self.account_username = account_username
-#         self.account_password = account_password
+    def __init__(self, account, account_username, account_password):
+        self.account = account
+        self.account_username = account_username
+        self.account_password = account_password
 
 #     def save_cred(self):
 #         Cred.accounts_list.append(self)
