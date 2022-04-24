@@ -5,6 +5,8 @@ from user import User
 from credentials import Cred
 import random
 
+# chars = 'abcdefghijklmnoprstuvwyzABCDEFGHIKLMNOPRSTUVWYZ1234567890~`!@#$%^&*()?/[]'
+
 
 def create_user(username, password):
     new_user = User(username, password)
@@ -24,23 +26,20 @@ def save_cred(credentials):
     credentials.save_cred()
 
 
-# def del_cred(credentials):
-#     credentials.delete_cred()
+def del_cred(credentials):
+    credentials.delete_cred()
 
 
-# def display_cred():
-#     return Cred.display_cred()
-
-
-# def find_cred(account):
-#     return Cred.find_cred(account)
+def find_cred(account):
+    return Cred.find_cred(account)
 
 
 # def check_existing_cred(account):
 #     return Cred.accounts_list(account)
 
 
-# chars = 'abcdefghijklmnoprstuvwyzABCDEFGHIKLMNOPRSTUVWYZ1234567890~`!@#$%^&*()?/[]'
+# def display_cred():
+#     return Cred.display_cred()
 
 
 # def main():
