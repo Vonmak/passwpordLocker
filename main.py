@@ -38,8 +38,8 @@ def check_existing_cred(account):
     return Cred.accounts_list(account)
 
 
-# def display_cred():
-#     return Cred.display_cred()
+def display_cred():
+    return Cred.display_cred()
 
 
 # def main():
