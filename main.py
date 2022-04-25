@@ -53,10 +53,16 @@ def find_cred(account):
 
 
 def check_existing_cred(account):
+    '''
+    function to check for existing credentials
+    '''
     return Cred.cred_exist(account)
 
 
 def display_cred():
+    '''
+    function to display credentials
+    '''
     return Cred.display_cred()
 
 
@@ -110,7 +116,6 @@ def main():
 
         print('Password:')
         password = input()
-        # if username != user_list
 
     print('\n')
     print(f'Hi {username}!, What would you like to do?')
