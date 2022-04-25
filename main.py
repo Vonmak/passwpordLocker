@@ -9,28 +9,46 @@ chars = 'abcdefghijklmnoprstuvwyzABCDEFGHIKLMNOPRSTUVWYZ1234567890~`!@#$%^&*()?/
 
 
 def create_user(username, password):
+    '''
+    function to create a new user
+    '''
     new_user = User(username, password)
     return new_user
 
 
 def save_user(user):
+    '''
+    function to save new user
+    '''
     user.save_user()
 
 
 def create_cred(account, account_username, account_pasword):
+    '''
+    function to create a new credential
+    '''
     new_cred = Cred(account, account_username, account_pasword)
     return new_cred
 
 
 def save_cred(credentials):
+    '''
+    function to save credentials
+    '''
     credentials.save_cred()
 
 
 def del_cred(credentials):
+    '''
+    function to delete credentials
+    '''
     credentials.delete_cred()
 
 
 def find_cred(account):
+    '''
+    function to find credentials
+    '''
     return Cred.find_cred(account)
 
 
@@ -92,13 +110,14 @@ def main():
 
         print('Password:')
         password = input()
+        # if username != user_list
 
     print('\n')
     print(f'Hi {username}!, What would you like to do?')
     print('\n')
 
     while True:
-        print('Use these short: \n ca -create credentials account, dc - display credentials, fc - find credentials, dac- delete account credentials')
+        print('Use these short: \n ca -create credentials account, dc - display credentials, fc - find credentials, d - delete account credentials')
 
         short_code = input().lower()
 
@@ -161,8 +180,21 @@ def main():
             search_account = input()
             if check_existing_cred(search_account):
                 search_cred = find_cred(search_account)
+                print('\n')
                 print(f'Yes you have {search_cred.account} in your storage.')
 
+            else:
+                print('Ooops!! That account does not exist!!')
+
+        elif short_code == 'd':
+            print('Please Enter Account to Delete:')
+            search_account = input()
+            if find_cred(search_account):
+                search_cred = find_cred(search_account)
+                search_cred.delete_cred()
+                print('\n')
+                print(
+                    f'Your {search_cred.account} credentials were deleted successfully! ')
             else:
                 print('Ooops!! That account does not exist!!')
 
